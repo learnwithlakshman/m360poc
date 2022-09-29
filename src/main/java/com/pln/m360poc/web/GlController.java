@@ -16,7 +16,7 @@ public class GlController {
 
       @PostMapping("/glposting-intiation")
       public ResponseEntity<?> glRequest(HttpServletRequest request){
-             String header = request.getHeader("error");
+             String header = request.getHeader("success");
              if(header!=null){
                    GlSuccessResponse response = GlSuccessResponse.builder().requestKey("6507e49a-09d5-4332-9464-a833acb25224")
                        .status("ACCEPTED").build();
